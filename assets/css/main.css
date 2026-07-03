@@ -61,7 +61,7 @@ img {
   justify-content: space-between;
   gap: 28px;
 }
-
+ 
 .brand {
   display: inline-flex;
   align-items: center;
@@ -70,13 +70,29 @@ img {
   letter-spacing: -1px;
 }
 
+.custom-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.custom-logo {
+  max-height: 58px;
+  width: auto;
+}
+
+.brand img {
+  max-height: 58px;
+  width: auto;
+}
+
 .brand-mark {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: var(--white);
   padding: 10px 12px;
   border-radius: 14px;
-  margin-right: 8px;
+  margin-right: 10px;
   font-weight: 900;
+  font-size: 18px;
 }
 
 .brand-name {
