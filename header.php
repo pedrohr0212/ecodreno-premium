@@ -14,7 +14,12 @@
     <div class="container header-inner">
 
         <a href="<?php echo esc_url(home_url('/')); ?>" class="brand">
-            <span class="brand-mark">Eco</span><span class="brand-name">Dreno</span>
+            <?php if (has_custom_logo()) : ?>
+                <?php the_custom_logo(); ?>
+            <?php else : ?>
+                <span class="brand-mark">ED</span>
+                <span class="brand-name">EcoDreno</span>
+            <?php endif; ?>
         </a>
 
         <nav class="main-nav" id="mainNav">
@@ -26,7 +31,7 @@
         </nav>
 
         <a href="<?php echo esc_url(ecodreno_whatsapp_url()); ?>" class="header-cta" target="_blank" rel="noopener">
-            Atendimento 24h
+            Fale no WhatsApp
         </a>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
